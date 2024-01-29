@@ -4,8 +4,8 @@ const client = `bot`
 const bot = new AoiClient({
     token: "", // Bot Tokenini Gir
     prefix: "", // Prefixini Gir
-    intents: ["Guilds", "GuildMessages", "MessageContent"], // Ä°ntentler
-    events: ["onMessage", "onInteractionCreate"], // Eventler
+    intents: ["Guilds", "GuildMessages", "MessageContent","GuildMembers"], // Ä°ntentler
+    events: ["onMessage", "onInteractionCreate","onJoin"], // Eventler
        database: {
     type: "aoi.db",
     db: require("@akarui/aoi.db"),
